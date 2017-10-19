@@ -1,15 +1,23 @@
 {
     "name": "angellom/hello-world",
     "description": "A test HelloWorld package",
-    "authors": [
+    "version": "1.0.0",
+     "authors": [
         {
             "name": "Angello Maggio",
             "email": "angellom@jfrog.com"
         }
     ],
-    "minimum-stability": "dev",
+    "repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/AngelloMaggio/composer-helloworld"
+     }
+     ],
+
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.3.0",
+        "AngelloMaggio/composer-helloworld": "*"
      },
     "autoload": {
         "psr-0": {
